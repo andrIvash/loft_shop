@@ -1,0 +1,49 @@
+/* sticky footer _____________________________________________________________*/
+
+html, body {
+    height: 100%;
+}
+
+html {
+	
+   font: 100%/1.4em;
+}
+.wrapper {
+	 min-height: 100%;
+     height: auto !important;
+     height: 100%;
+     margin: 0 auto -80px;
+
+}
+.push {
+	height: 80px;
+}
+
+.b-page-footer {
+ height: 80px;
+ margin-top: 0px;	
+}
+
+
+/* clear _____________________________________________________________________*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* hide links _____________________________________________________________________*/
+.text-hide {
+   text-indent: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+}
+.logo-hide {
+	 font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+}
