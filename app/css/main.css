@@ -8,6 +8,7 @@ html, body {
    height: auto !important;
    height: 100%;
    margin: 0 auto -240px;
+   position: relative;
 
 }
 /* header _____________________________________________________________________________*/
@@ -321,6 +322,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e4f0', end
   float:right;
   width: 740px;
 }
+
 /*main navigation ____________________________________________________________*/
 .b-main-nav {
   width: 230px;
@@ -404,43 +406,61 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e4f0', end
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.b-goods-list__item {
-  /*display: inline-block;*/
-  display: table;
-    vertical-align: middle;
-  width: 740px;
-  border: 1px solid #dbe1eb;
-  -moz-box-shadow: 0px 0px 10px #dbe1eb;
-  -webkit-box-shadow: 0px 0px 10px #dbe1eb;
-  box-shadow: 0px 0px 10px #dbe1eb;
-  margin-bottom: 20px;
   
 }
 
+.b-goods-list__item {
+  
+  border: 1px solid #dbe1eb;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 740px;
+  vertical-align: top;
+  margin-right: 20px;
+  min-height: 158px;
+}
+
+.b-goods-list__item:last-child {
+  margin-bottom: 35px;
+}
+
+.b-goods-list__item:hover {
+  -moz-box-shadow: 0px 0px 10px #dbe1eb;
+  -webkit-box-shadow: 0px 0px 10px #dbe1eb;
+  box-shadow: 0px 0px 10px #dbe1eb;
+  cursor: pointer;
+}
+
 .b-goods-list__item-foto {
-    display: table-cell;
-    vertical-align: middle;
-    width: 140px;
-    max-height: 110px;
-    padding: 32px 27px 12px 25px;
-    
+    height: 140px;
+    overflow: hidden;
+    width: 190px;
+    display: inline-block;
+    text-align: center;
+/*    vertical-align: middle;*/
+
 }
 
 .b-goods-list__item-foto-img {
-  width:100%;
-  height: 100%;
+
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  
+  
 }
 
 .b-goods-list__item-content {
-  display: table-cell;
+  display: inline-block;
   font-family:"elektra_light_proregular";
+  vertical-align: top;
+  padding-top: 30px;
+  width: 60%;
 }
 
 .b-goods-list__item-content-header {
   font-size: 15px;
-  padding-top: 32px;
+ 
   margin-bottom: 16px;
 }
 .b-goods-list__item-content-header-link {
@@ -450,6 +470,134 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e4f0', end
   font-size: 14px;
   color: #5c7b98;
   
+}
+
+/* shop-info____________________________________________________________*/
+.b-shop-info {
+  color: #5c7b98;
+  margin-bottom: 85px;
+}
+
+.b-shop-info__header {
+  font-family: "elektra_light_probold";
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.b-shop-info__content {
+ font-family: "elektra_light_proregular";
+ font-size: 15px;
+}
+.b-shop-info__content p {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+/*footer______________________________________________________________________*/
+
+.b-footer-container {
+   background: url('../img/back-fon.png') #714d9e ;
+}
+
+.b-footer {
+   position:relative;
+}
+.b-footer__logo {
+   position: absolute;
+   top: 100px;
+   left: 0px;
+}
+.b-footer__logo-link {
+   text-decoration: none;
+}
+
+.b-footer__links-list {
+  position: absolute;
+  top: 62px;
+  left:259px;
+  font-family: "elektra_light_probold";
+  font-size: 15px;
+  color: #fff;
+  
+}
+
+.b-footer__links-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  margin-right: 65px;
+
+}
+
+.b-footer__links-item.header {
+  margin-bottom: 8px;
+}
+
+.b-footer__links-item {
+  margin-bottom: 7px;
+}
+
+.b-footer__links-item-href {
+  color: #fff;
+  font-family:"elektra_light_proregular";
+}
+.b-footer__links-item-href:hover {
+  text-decoration: none;
+}
+.b-footer-socials {
+  position: absolute;
+  top: 75px;
+  left: 813px;
+  width: 200px;
+}
+
+.b-footer-socials__link {
+  display: inline-block;
+  margin-bottom: 22px;
+  text-decoration: none;
+
+}
+
+.vk , .fb, .tw {
+  margin-right: 5px;
+}
+
+/* arrow up_____________________________________________________________________*/
+ .b-arrow-up {
+    position: fixed;
+    margin-left: 1185px;
+    bottom: 290px;
+    
+
+ }
+ .b-arrow-up__link {
+  position:relative;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family:"elektra_light_probold";
+    font-size: 18px;
+    color:#fff;
+    background-color: #00b9fe;
+    padding: 8px;
+    width: 63px;
+ }
+ .b-arrow-up__link:before {
+ content:"";  
+ position: absolute;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #00b9fe;
+    top: -10px;
+    left: 34px;
+}
+.b-arrow-up__link:after {
+ content:"";
+    position: absolute;
+    left: 35px; 
+    top: 0px; 
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #fff;
 }
 /* sticky footer _____________________________________________________________*/
 
@@ -462,13 +610,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e4f0', end
  margin: 0 auto;
  height: 240px;
  margin-top: 0px; 
- background: #714d9e;
+
 }
 
 .b-footer {
   width: 1000px;
   margin: 0 auto;
   height: 100%;
+ 
+
 }
 
 
