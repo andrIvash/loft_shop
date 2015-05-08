@@ -421,13 +421,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e4f0', end
 
 .b-goods-list__item {
   
-  border: 1px solid #dbe1eb;
   margin-bottom: 20px;
-  display: inline-block;
   width: 740px;
-  vertical-align: top;
-  margin-right: 20px;
   min-height: 158px;
+  margin-right: 21px;
+  display: inline-block;
+  border: 1px solid #dbe1eb;
+  vertical-align: top;
 }
 
 .b-goods-list__item:last-child {
@@ -435,13 +435,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e4f0', end
 }
 
 .b-goods-list__item.grid {
-  width: 240px;
+    width: 220px;   
 
 }
 
+.b-goods-list__item-pref {
+  margin-left: 15px;
+}
+.b-goods-list__item-pref.grid {
+  display: table;
+}
 
 
+.b-goods-list__item-pref__line {
+  display: inline-block;
+  margin-right: 2px;
+}
+.b-goods-list__item-pref__line.grid {
+  display: table-row;
+}
 
+
+.b-goods-list__item-pref-label, .b-goods-list__item-pref-data {
+    display: inline-block;
+}
+.b-goods-list__item-pref-label.grid, .b-goods-list__item-pref-data.grid {
+    display: table-cell;
+    padding-right: 30px;
+}
 
 
 .b-goods-list__item:hover {
@@ -452,23 +473,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e4f0', end
 }
 
 .b-goods-list__item-foto {
-    height: 140px;
-    width: 190px;
-    overflow: hidden;
-    margin: 0 auto;
     text-align: center;
-    vertical-align: middle;
+    overflow: hidden;
+    height: 140px;
+    width: 160px;
     display: inline-block;
-    /*vertical-align: middle;*/
-/*    vertical-align: middle;*/
+    margin-left: 30px;
+    
+    
 
 }
 
 .b-goods-list__item-foto-img {
-    vertical-align: bottom;
     margin-top: 30px;
-   /* margin-top: 20px;*/
-  
+   
   
 }
 
@@ -477,13 +495,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e4f0', end
   font-family:"elektra_light_proregular";
   vertical-align: top;
   padding-top: 30px;
-  width: 60%;
+  width: 530px;
+  
+}
+
+.b-goods-list__item-content.grid {
+  width: 215px;
 }
 
 .b-goods-list__item-content-header {
   font-size: 15px;
- 
+
   margin-bottom: 16px;
+  padding-left: 10px;
 }
 .b-goods-list__item-content-header-link {
    color: #00b9fe;
@@ -491,13 +515,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e4f0', end
 .b-goods-list__item-content-text {
   font-size: 14px;
   color: #5c7b98;
+  margin-bottom: 10px;
   
 }
 
 /* shop-info____________________________________________________________*/
 .b-shop-info {
   color: #5c7b98;
-  margin-bottom: 85px;
+  margin-bottom: 89px;
 }
 
 .b-shop-info__header {
