@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="css/main.css" />
 		
 		
+		
 	<!-- endbuild -->
 	<!-- build:js js/vendor.js -->
 		<!-- bower:js -->
@@ -23,6 +24,7 @@
 		<script src="bower/html5shiv/dist/html5shiv.js"></script>
 		<script src="bower/respond/dest/respond.src.js"></script>
 		<!-- endbower -->
+		
 	<!-- endbuild -->
 	
 	<title></title>
@@ -95,10 +97,20 @@
 					</ul>
 					<div class="b-pager clearfix">
 						<form class="b-pager__form">
-							<select class="b-pager__form-select" name="view">
-	    						<option selected="selected">Сеткой</option>
-								<option >Линиями</option>
-							</select>
+							<div class="b-page__form-select-wrapper ">
+								<div class="b-page__form-select-data">
+									Линиями
+								</div>
+								<ul class="b-pager__form-select">
+									<li class="b-pager__form-select-item">
+										Линиями
+									</li>
+									<li class="b-pager__form-select-item">
+										Сеткой
+									</li>
+								</ul>
+							</div>
+							
 						</form>
 						<ul class="b-pager__list">
 							<li class="b-pager__list-item">
@@ -166,7 +178,7 @@
 					</div>
 					<div class="b-content">
 						<ul class="b-goods-list clearfix">
-							<li class="b-goods-list__item">
+							<li class="b-goods-list__item grid">
 									<div class="b-goods-list__item-foto">
 										<img class="b-goods-list__item-foto-img" src="img/t1.png" title="Apple Thunderbolt Display 27">
 									</div>
@@ -175,12 +187,48 @@
 											<a href="#" class="b-goods-list__item-content-header-link "title="Apple Thunderbolt Display 27">Apple Thunderbolt Display 27</a>
 										</div>
 										<div class="b-goods-list__item-content-text">
-											Артикул: 42787825, Опция: включена, Цвет: серебристый, Размер: 1280*1245*90, Вес: 9 кг 
+											<div class="b-goods-list__item-pref">
+												<div class="b-goods-list__item-pref__line">
+													<div class="b-goods-list__item-pref-label">
+														Артикул:
+													</div>
+													<div class="b-goods-list__item-pref-data">
+														42787825
+													</div>
+												</div>
+												<div class="b-goods-list__item-pref__line">
+													<div class="b-goods-list__item-pref-label">
+														Опция: 
+													</div>
+													<div class="b-goods-list__item-pref-data">
+														включена
+													</div>
+												</div>	
+												<div class="b-goods-list__item-pref__line">
+													<div class="b-goods-list__item-pref-label">
+														Цвет:
+													</div>
+													<div class="b-goods-list__item-pref-data">
+														серебристый
+													</div>
+												</div>
+												<div class="b-goods-list__item-pref__line">
+													<div class="b-goods-list__item-pref-label">
+														Размер:
+													</div>
+													<div class="b-goods-list__item-pref-data">
+													 	1280*1245*90
+													</div>	
+													<div class="b-goods-list__item-pref-data">
+														Вес: 9 кг
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								
 							</li>
-							<li class="b-goods-list__item">
+							<li class="b-goods-list__item grid">
 								
 									<div class="b-goods-list__item-foto">
 										<img class="b-goods-list__item-foto-img" src="img/t2.png" title="Apple Thunderbolt Display 27">
@@ -195,7 +243,7 @@
 									</div>
 								
 							</li>
-							<li class="b-goods-list__item">
+							<li class="b-goods-list__item grid">
 								<div class="b-goods-list__item-foto">
 									<img class="b-goods-list__item-foto-img" src="img/t3.png" title="Apple Thunderbolt Display 27">
 								</div>
@@ -208,7 +256,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="b-goods-list__item">
+							<li class="b-goods-list__item grid">
 								<div class="b-goods-list__item-foto">
 									<img class="b-goods-list__item-foto-img" src="img/t4.png" title="iPad Air Wi-Fi + Cellular 128GB - Silver">
 								</div>
@@ -221,7 +269,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="b-goods-list__item">
+							<li class="b-goods-list__item grid">
 								<div class="b-goods-list__item-foto">
 									<img class="b-goods-list__item-foto-img" src="img/t5.png" title="Apple iPod nano 7G 16 ГБ Blue">
 								</div>
@@ -234,7 +282,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="b-goods-list__item">
+							<li class="b-goods-list__item" grid>
 								<div class="b-goods-list__item-foto">
 									<img class="b-goods-list__item-foto-img" src="img/t6.png" title="Роутер Wi-Fi Apple AirPort Extreme Base Station">
 								</div>
