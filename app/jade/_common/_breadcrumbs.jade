@@ -1,0 +1,19 @@
+ul.b-breadcrumbs__list
+	each item, index in ['Главная', 'Каталог']
+		li.b-breadcrumbs__list-item
+			a(href="#" class='b-breadcrumbs__list-item-link ' + ((index == 1) ? 'active' : '' ))= item
+
+.b-pager.clearfix
+	form.b-pager__form
+		.b-page__form-select-wrapper
+			
+			.b-page__form-select-data Линиями
+			
+			ul.b-pager__form-select
+				li.b-pager__form-select-item(data-value="line") Линиями
+				li.b-pager__form-select-item(data-value="grid") Сеткой
+	
+	ul.b-pager__list
+		each item, index in ['1', '2', '3', '4', '5', 'Все']
+			li.b-pager__list-item
+				a(href="#" class="b-pager__list-item-link " + ((index == 0) ? 'active' : '' ))= item

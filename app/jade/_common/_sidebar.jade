@@ -1,0 +1,11 @@
+.b-sidebar
+	nav.b-main-nav
+		ul.b-main-nav__list.clearfix
+			each item, index in ['iPhone', 'iPad', 'iMac', 'Macbook', 'iPod', 'Другое']
+				li.b-main-nav__list-item
+					a(href="#" class="b-main-nav__list-item-link " + ((index == 0) ? 'active' : '' ))= item
+					if index == 0
+						ul.b-main-nav-dropdown__list
+							each item in ['iPhone 4s', 'iPhone 5', 'iPhone 5s с эксклюзивным дизайном', 'iPhone 6', 'iPhone 6 plus']
+								li.b-main-nav-dropdown__list-item
+									a(href="#", class="b-main-nav-dropdown__list-item-link")= item

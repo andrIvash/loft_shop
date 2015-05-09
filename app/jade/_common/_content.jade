@@ -1,0 +1,45 @@
+mixin goodsItem(src, link, linktext)
+	li.b-goods-list__item
+
+		.b-goods-list__item-foto
+			img.b-goods-list__item-foto-img(src='img/goods/#{src}', title='#{linktext}')
+		
+		.b-goods-list__item-content
+			
+			.b-goods-list__item-content-header
+				a.b-goods-list__item-content-header-link(href='#{link}' title='#{linktext}') #{linktext}
+			
+			.b-goods-list__item-content-text
+				.b-goods-list__item-pref
+					.b-goods-list__item-pref__line
+						.b-goods-list__item-pref-label Артикул
+						.b-goods-list__item-pref-data 42787825
+					.b-goods-list__item-pref__line
+						.b-goods-list__item-pref-label Опция
+						.b-goods-list__item-pref-data включена
+					.b-goods-list__item-pref__line
+						.b-goods-list__item-pref-label Цвет
+						.b-goods-list__item-pref-data серебристый
+					.b-goods-list__item-pref__line
+						.b-goods-list__item-pref-label Размер
+						.b-goods-list__item-pref-data 1280*1245*90
+					.b-goods-list__item-pref__line
+						.b-goods-list__item-pref-label Вес
+						.b-goods-list__item-pref-data 9 кг	
+
+.b-content
+	ul.b-goods-list.clearfix
+		+goodsItem('t1.png', '#', 'Apple Thunderb Display 27')
+		+goodsItem('t2.png', '#', 'Apple iMac 27')
+		+goodsItem('t3.png', '#', 'iPhone 5s Gold')
+		+goodsItem('t4.png', '#', 'iPad Air Wi-Fi + Cellular 128 GB - Silver')
+		+goodsItem('t5.png', '#', 'Apple iPod nano 7G 16 ГБ Blue')
+		+goodsItem('t6.png', '#', 'Роутер Wi-Fi Apple AirPort Extreme Base Station')
+
+	.b-shop-info
+		.b-shop-info__header Пара слов о магазине
+		.b-shop-info__content
+			p.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
+			p.
+				Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.				

@@ -1,631 +1,367 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="favicon-32x32.png">
-    <!-- build:css css/vendor.css -->
-		<!-- bower:css -->
-		<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
-		<!-- endbower -->
-	<!-- endbuild -->
-	<!-- build:css css/common.css -->
-		<link rel="stylesheet" href="css/font.css" />
-		<link rel="stylesheet" href="css/main.css" />
-		
-		
-		
-	<!-- endbuild -->
-	<!-- build:js js/vendor.js -->
-		<!-- bower:js -->
-		<script src="bower/jquery/dist/jquery.js"></script>
-		<script src="bower/html5shiv/dist/html5shiv.js"></script>
-		<script src="bower/respond/dest/respond.src.js"></script>
-		<!-- endbower -->
-		
-	<!-- endbuild -->
-	
-	<title></title>
-	
-</head>
-<body>
-<!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<!--[if IE 8]>
+<html class='no-js ie ie8' lang='ru-RU'>
 <![endif]-->
-	<div class="wrapper ">
-		<header class="b-header-container">
-			<div class="b-header ">
-				<div class="b-header-content">
-					<div class="b-logo">
-						<a href="index.html" class="b-logo-image logo-hide"> 
-							<img title="Эпплшоп" src="img/logo.png" alt="Эпплшоп">
-							<span class="logo-hide">Эпплшоп</span>
-						</a>
-					</div>
-					<address class="b-contacts">
-						<ul class="b-contacts__list">
-							<li class="b-contacts__list-item  phone-link">
-								<a href="tel:+380115554433" class="b-contacts__item-link"><span class="phone-code">+7(921)</span>322 12 32</a>
-							</li>						
-							<li class="b-contacts__list-item ">
-								<a href="mailto:andr.ivas12@gmail.com" class="b-contacts__item-link mail-link">manager@company.com</a>
-							</li>
-						</ul>
-					</address>
-					<nav class="b-header-menu">
-						<ul class="b-header-menu__items">
-        					<li class="b-header-menu__item">
-        						<a href="" class="b-header-menu__link">Мобильные телефоны</a>
-        					</li>
-        					<li class="b-header-menu__item">
-        						<a href="" class="b-header-menu__link  active">Планшеты</a>
-        					</li>
-        					<li class="b-header-menu__item">
-        						<a href="" class="b-header-menu__link">Мр3 плееры</a>
-        					</li>
-        					<li class="b-header-menu__item">
-        						<a href="" class="b-header-menu__link">Персональные компьютеры</a>
-        					</li>
-        					<li class="b-header-menu__item">
-        						<a href="" class="b-header-menu__link">Ноутбуки</a>
-        					</li>
-        					<li class="b-header-menu__item">
-        						<a href="" class="b-header-menu__link">Apple TV</a>
-        					</li>
-        					<li class="b-header-menu__item">
-        						<a href="" class="b-header-menu__link">Аксессуары</a>
-        					</li>
-    					</ul> 
-					</nav>
-				</div>
-				
-			</div>
-			
-		</header>
-		<div class="b-page-content-container">
-			<div class="b-page-content ">
-				<div class="b-breadcrumbs clearfix">
-					<ul class="b-breadcrumbs__list">
-						<li class="b-breadcrumbs__list-item">
-							<a href="#" class="b-breadcrumbs__list-item-link">Главная</a>
-						</li>
-						<li class="b-breadcrumbs__list-item">
-							<a href="#" class="b-breadcrumbs__list-item-link active">Каталог</a>
-						</li>
-					</ul>
-					<div class="b-pager clearfix">
-						<form class="b-pager__form">
-							<div class="b-page__form-select-wrapper ">
-								<div class="b-page__form-select-data">
-									Линиями
-								</div>
-								<ul class="b-pager__form-select">
-									<li class="b-pager__form-select-item" data-value="line">
-										Линиями
-									</li>
-									<li class="b-pager__form-select-item" data-value="grid">
-										Сеткой
-									</li>
-								</ul>
-							</div>
-							
-						</form>
-						<ul class="b-pager__list">
-							<li class="b-pager__list-item">
-								<a href="#" class="b-pager__list-item-link active">1</a>
-							</li>
-							<li class="b-pager__list-item">
-								<a href="#" class="b-pager__list-item-link">2</a>
-							</li>
-							<li class="b-pager__list-item">
-								<a href="#" class="b-pager__list-item-link">3</a>
-							</li>
-							<li class="b-pager__list-item">
-								<a href="#" class="b-pager__list-item-link">4</a>
-							</li>
-							<li class="b-pager__list-item">
-								<a href="#" class="b-pager__list-item-link">5</a>
-							</li>
-							<li class="b-pager__list-item">
-								<a href="#" class="b-pager__list-item-link">Все</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="b-main-content clearfix">
-					<div class="b-sidebar">
-						<nav class="b-main-nav">
-							<ul class="b-main-nav__list clearfix">
-								<li class="b-main-nav__list-item">
-									<a href="" class="b-main-nav__list-item-link active">iPhone</a>
-									<ul class="b-main-nav-dropdown__list">
-										<li class="b-main-nav-dropdown__list-item">
-											<a href="#" class="b-main-nav-dropdown__list-item-link">iPhone 4s</a>
-										</li>
-										<li class="b-main-nav-dropdown__list-item">
-											<a href="#" class="b-main-nav-dropdown__list-item-link">iPhone 5</a>
-										</li>
-										<li class="b-main-nav-dropdown__list-item">
-											<a href="#" class="b-main-nav-dropdown__list-item-link">iPhone 5s с эксклюзивным дизайном</a>
-										</li>
-										<li class="b-main-nav-dropdown__list-item">
-											<a href="#" class="b-main-nav-dropdown__list-item-link">iPhone 6</a>
-										</li>
-										<li class="b-main-nav-dropdown__list-item">
-											<a href="#" class="b-main-nav-dropdown__list-item-link">iPhone 6 plus </a>
-										</li>
-									</ul>
-								</li>
-								<li class="b-main-nav__list-item">
-									<a href="" class="b-main-nav__list-item-link">iPad</a>
-								</li>
-								<li class="b-main-nav__list-item">
-									<a href="" class="b-main-nav__list-item-link">iMac</a>
-								</li>
-								<li class="b-main-nav__list-item">
-									<a href="" class="b-main-nav__list-item-link">Macbook</a>
-								</li>
-								<li class="b-main-nav__list-item">
-									<a href="" class="b-main-nav__list-item-link">iPod</a>
-								</li>
-								<li class="b-main-nav__list-item">
-									<a href="" class="b-main-nav__list-item-link">Другое</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="b-content">
-						<ul class="b-goods-list clearfix">
-							<li class="b-goods-list__item ">
-									<div class="b-goods-list__item-foto">
-										<img class="b-goods-list__item-foto-img" src="img/t1.png" title="Apple Thunderbolt Display 27">
-									</div>
-									<div class="b-goods-list__item-content">
-										<div class="b-goods-list__item-content-header">
-											<a href="#" class="b-goods-list__item-content-header-link "title="Apple Thunderbolt Display 27">Apple Thunderbolt Display 27</a>
-										</div>
-										<div class="b-goods-list__item-content-text">
-											<div class="b-goods-list__item-pref">
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Артикул:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														42787825
-													</div>
-												</div>
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Опция: 
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														включена
-													</div>
-												</div>	
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Цвет:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														серебристый
-													</div>
-												</div>
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Размер:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-													 	1280*1245*90
-													</div>
-												</div>	
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Вес:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														9 кг
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								
-							</li>
-							<li class="b-goods-list__item ">
-								
-									<div class="b-goods-list__item-foto">
-										<img class="b-goods-list__item-foto-img" src="img/t2.png" title="Apple Thunderbolt Display 27">
-									</div>
-									<div class="b-goods-list__item-content">
-										<div class="b-goods-list__item-content-header">
-											<a href="#" class="b-goods-list__item-content-header-link "title="Apple iMac 27">Apple iMac 27"</a>
-										</div>
-										<div class="b-goods-list__item-content-text">
-											<div class="b-goods-list__item-pref">
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Артикул:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														42787825
-													</div>
-												</div>
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Опция: 
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														включена
-													</div>
-												</div>	
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Цвет:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														серебристый
-													</div>
-												</div>
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Размер:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-													 	1280*1245*90
-													</div>
-												</div>	
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Вес:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														9 кг
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								
-							</li>
-							<li class="b-goods-list__item ">
-								<div class="b-goods-list__item-foto">
-									<img class="b-goods-list__item-foto-img" src="img/t3.png" title="Apple Thunderbolt Display 27">
-								</div>
-								<div class="b-goods-list__item-content">
-									<div class="b-goods-list__item-content-header">
-										<a href="#" class="b-goods-list__item-content-header-link "title="iPhone 5s Gold">iPhone 5s Gold</a>
-									</div>
-									<div class="b-goods-list__item-content-text">
-										<div class="b-goods-list__item-pref">
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Артикул:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														42787825
-													</div>
-												</div>
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Опция: 
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														включена
-													</div>
-												</div>	
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Цвет:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														серебристый
-													</div>
-												</div>
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Размер:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-													 	1280*1245*90
-													</div>
-												</div>	
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Вес:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														9 кг
-													</div>
-												</div>
-											</div>
-									</div>
-								</div>
-							</li>
-							<li class="b-goods-list__item ">
-								<div class="b-goods-list__item-foto">
-									<img class="b-goods-list__item-foto-img" src="img/t4.png" title="iPad Air Wi-Fi + Cellular 128GB - Silver">
-								</div>
-								<div class="b-goods-list__item-content">
-									<div class="b-goods-list__item-content-header">
-										<a href="#" class="b-goods-list__item-content-header-link "title="iPad Air Wi-Fi + Cellular 128GB - Silver">iPad Air Wi-Fi + Cellular 128 GB - Silver</a>
-									</div>
-									<div class="b-goods-list__item-content-text">
-										<div class="b-goods-list__item-pref">
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Артикул:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														42787825
-													</div>
-												</div>
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Опция: 
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														включена
-													</div>
-												</div>	
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Цвет:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														серебристый
-													</div>
-												</div>
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Размер:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-													 	1280*1245*90
-													</div>
-												</div>	
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Вес:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														9 кг
-													</div>
-												</div>
-											</div>
-									</div>
-								</div>
-							</li>
-							<li class="b-goods-list__item ">
-								<div class="b-goods-list__item-foto">
-									<img class="b-goods-list__item-foto-img" src="img/t5.png" title="Apple iPod nano 7G 16 ГБ Blue">
-								</div>
-								<div class="b-goods-list__item-content">
-									<div class="b-goods-list__item-content-header">
-										<a href="#" class="b-goods-list__item-content-header-link "title="Apple iPod nano 7G 16 ГБ Blue">Apple iPod nano 7G 16 ГБ Blue</a>
-									</div>
-									<div class="b-goods-list__item-content-text">
-										<div class="b-goods-list__item-pref">
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Артикул:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														42787825
-													</div>
-												</div>
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Опция: 
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														включена
-													</div>
-												</div>	
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Цвет:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														серебристый
-													</div>
-												</div>
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Размер:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-													 	1280*1245*90
-													</div>
-												</div>	
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Вес:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														9 кг
-													</div>
-												</div>
-											</div>
-									</div>
-								</div>
-							</li>
-							<li class="b-goods-list__item ">
-								<div class="b-goods-list__item-foto">
-									<img class="b-goods-list__item-foto-img" src="img/t6.png" title="Роутер Wi-Fi Apple AirPort Extreme Base Station">
-								</div>
-								<div class="b-goods-list__item-content">
-									<div class="b-goods-list__item-content-header">
-										<a href="#" class="b-goods-list__item-content-header-link "title="Роутер Wi-Fi Apple AirPort Extreme Base Station">Роутер Wi-Fi Apple AirPort Extreme Base Station</a>
-									</div>
-									<div class="b-goods-list__item-content-text">
-										<div class="b-goods-list__item-pref">
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Артикул:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														42787825
-													</div>
-												</div>
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Опция: 
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														включена
-													</div>
-												</div>	
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Цвет:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														серебристый
-													</div>
-												</div>
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Размер:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-													 	1280*1245*90
-													</div>
-												</div>	
-												<div class="b-goods-list__item-pref__line">
-													<div class="b-goods-list__item-pref-label">
-														Вес:
-													</div>
-													<div class="b-goods-list__item-pref-data">
-														9 кг
-													</div>
-												</div>
-											</div>
-									</div>
-								</div>
-							</li>
-							
-						</ul>
-						<div class="b-shop-info">
-							<div class="b-shop-info__header">
-								Пара слов о магазине
-							</div>
-							<div class="b-shop-info__content">
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
-								</p>
-								<p>
-									Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
-								</p>
-							</div>
-						</div>
-					</div>
-					
-				</div>
+<!--[if IE]>
+<html class='no-js ie' lang='ru-RU'>
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='ru-RU'>
+  <!--<![endif]-->
 
-			</div>
-		</div>
-		<div class="push"></div>
-	</div>
-	<div class="b-arrow-up" id="back-top">
-	    <a href="#top" class="b-arrow-up__link">Наверх</a>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Seo-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <title>ЭпплShop</title>
+    <!-- Styles-->
+    <!-- build:css css/vendor.min.css-->
+    <!-- bower:css-->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:css css/common.min.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font.css">
+    <!-- endbuild-->
+    <!-- JS-->
+    <!-- build:js js/vendor.min.js-->
+    <!-- bower:js-->
+    <script src="bower/jquery/dist/jquery.min.js"></script>
+    <script src="bower/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="bower/respond/src/respond.js"></script>
+    <!-- endbower-->
+    <!-- endbuild-->
+  </head>
+
+  <body>
+    <!--[if lt IE 8]>
+  <p class='browserupgrade'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+    <!-- Content: start-->
+    <div class="wrapper">
+      <div class="b-header-container">
+        <div class="b-header">
+          <div class="b-header-content">
+            <div class="b-logo">
+              <a href="/" class="b-logo-image logo-hide"><img src="img/logo.png" alt="Эпплшоп"><span class="logo-hide">Эпплшоп</span></a>
+            </div> <address class="b-contacts">
+            <ul class="b-contacts__list">
+              <li class="b-contacts__list-item phone-link"><a href="tel:+380115554433" class="b-contacts__item-link"><span class="phone-code">+7(921)</span>322 12 32</a></li>
+              <li class="b-contacts__list-item"><a href="mailto:andr.ivas12@gmail.com" class="b-contacts__item-link mail-link">manager@company.com</a></li>
+            </ul>
+          </address>
+            <nav class="b-header-menu">
+              <ul class="b-header-menu__items">
+                <li class="b-header-menu__item"><a href="#" class="b-header-menu__link ">Мобильные телефоны</a></li>
+                <li class="b-header-menu__item"><a href="#" class="b-header-menu__link active">Планшеты</a></li>
+                <li class="b-header-menu__item"><a href="#" class="b-header-menu__link ">Мр3 плееры</a></li>
+                <li class="b-header-menu__item"><a href="#" class="b-header-menu__link ">Персональные компьютеры</a></li>
+                <li class="b-header-menu__item"><a href="#" class="b-header-menu__link ">Ноутбуки</a></li>
+                <li class="b-header-menu__item"><a href="#" class="b-header-menu__link ">Apple TV</a></li>
+                <li class="b-header-menu__item"><a href="#" class="b-header-menu__link ">Аксессуары</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="b-page-content-container">
+        <div class="b-page-content">
+          <div class="b-breadcrumbs clearfix">
+            <ul class="b-breadcrumbs__list">
+              <li class="b-breadcrumbs__list-item"><a href="#" class="b-breadcrumbs__list-item-link ">Главная</a></li>
+              <li class="b-breadcrumbs__list-item"><a href="#" class="b-breadcrumbs__list-item-link active">Каталог</a></li>
+            </ul>
+            <div class="b-pager clearfix">
+              <form class="b-pager__form">
+                <div class="b-page__form-select-wrapper">
+                  <div class="b-page__form-select-data">Линиями</div>
+                  <ul class="b-pager__form-select">
+                    <li data-value="line" class="b-pager__form-select-item">Линиями</li>
+                    <li data-value="grid" class="b-pager__form-select-item">Сеткой</li>
+                  </ul>
+                </div>
+              </form>
+              <ul class="b-pager__list">
+                <li class="b-pager__list-item"><a href="#" class="b-pager__list-item-link active">1</a></li>
+                <li class="b-pager__list-item"><a href="#" class="b-pager__list-item-link ">2</a></li>
+                <li class="b-pager__list-item"><a href="#" class="b-pager__list-item-link ">3</a></li>
+                <li class="b-pager__list-item"><a href="#" class="b-pager__list-item-link ">4</a></li>
+                <li class="b-pager__list-item"><a href="#" class="b-pager__list-item-link ">5</a></li>
+                <li class="b-pager__list-item"><a href="#" class="b-pager__list-item-link ">Все</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="b-main-content clearfix">
+            <div class="b-sidebar">
+              <nav class="b-main-nav">
+                <ul class="b-main-nav__list clearfix">
+                  <li class="b-main-nav__list-item"><a href="#" class="b-main-nav__list-item-link active">iPhone</a>
+                    <ul class="b-main-nav-dropdown__list">
+                      <li class="b-main-nav-dropdown__list-item"><a href="#" class="b-main-nav-dropdown__list-item-link">iPhone 4s</a></li>
+                      <li class="b-main-nav-dropdown__list-item"><a href="#" class="b-main-nav-dropdown__list-item-link">iPhone 5</a></li>
+                      <li class="b-main-nav-dropdown__list-item"><a href="#" class="b-main-nav-dropdown__list-item-link">iPhone 5s с эксклюзивным дизайном</a></li>
+                      <li class="b-main-nav-dropdown__list-item"><a href="#" class="b-main-nav-dropdown__list-item-link">iPhone 6</a></li>
+                      <li class="b-main-nav-dropdown__list-item"><a href="#" class="b-main-nav-dropdown__list-item-link">iPhone 6 plus</a></li>
+                    </ul>
+                  </li>
+                  <li class="b-main-nav__list-item"><a href="#" class="b-main-nav__list-item-link ">iPad</a> </li>
+                  <li class="b-main-nav__list-item"><a href="#" class="b-main-nav__list-item-link ">iMac</a> </li>
+                  <li class="b-main-nav__list-item"><a href="#" class="b-main-nav__list-item-link ">Macbook</a> </li>
+                  <li class="b-main-nav__list-item"><a href="#" class="b-main-nav__list-item-link ">iPod</a> </li>
+                  <li class="b-main-nav__list-item"><a href="#" class="b-main-nav__list-item-link ">Другое</a> </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="b-content">
+              <ul class="b-goods-list clearfix">
+                <li class="b-goods-list__item">
+                  <div class="b-goods-list__item-foto"><img src="img/goods/t1.png" title="Apple Thunderb Display 27" class="b-goods-list__item-foto-img"></div>
+                  <div class="b-goods-list__item-content">
+                    <div class="b-goods-list__item-content-header"><a href="#" title="Apple Thunderb Display 27" class="b-goods-list__item-content-header-link">Apple Thunderb Display 27</a></div>
+                    <div class="b-goods-list__item-content-text">
+                      <div class="b-goods-list__item-pref">
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Артикул</div>
+                          <div class="b-goods-list__item-pref-data">42787825</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Опция</div>
+                          <div class="b-goods-list__item-pref-data">включена</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Цвет</div>
+                          <div class="b-goods-list__item-pref-data">серебристый</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Размер</div>
+                          <div class="b-goods-list__item-pref-data">1280*1245*90</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Вес</div>
+                          <div class="b-goods-list__item-pref-data">9 кг </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="b-goods-list__item">
+                  <div class="b-goods-list__item-foto"><img src="img/goods/t2.png" title="Apple iMac 27" class="b-goods-list__item-foto-img"></div>
+                  <div class="b-goods-list__item-content">
+                    <div class="b-goods-list__item-content-header"><a href="#" title="Apple iMac 27" class="b-goods-list__item-content-header-link">Apple iMac 27</a></div>
+                    <div class="b-goods-list__item-content-text">
+                      <div class="b-goods-list__item-pref">
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Артикул</div>
+                          <div class="b-goods-list__item-pref-data">42787825</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Опция</div>
+                          <div class="b-goods-list__item-pref-data">включена</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Цвет</div>
+                          <div class="b-goods-list__item-pref-data">серебристый</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Размер</div>
+                          <div class="b-goods-list__item-pref-data">1280*1245*90</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Вес</div>
+                          <div class="b-goods-list__item-pref-data">9 кг </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="b-goods-list__item">
+                  <div class="b-goods-list__item-foto"><img src="img/goods/t3.png" title="iPhone 5s Gold" class="b-goods-list__item-foto-img"></div>
+                  <div class="b-goods-list__item-content">
+                    <div class="b-goods-list__item-content-header"><a href="#" title="iPhone 5s Gold" class="b-goods-list__item-content-header-link">iPhone 5s Gold</a></div>
+                    <div class="b-goods-list__item-content-text">
+                      <div class="b-goods-list__item-pref">
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Артикул</div>
+                          <div class="b-goods-list__item-pref-data">42787825</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Опция</div>
+                          <div class="b-goods-list__item-pref-data">включена</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Цвет</div>
+                          <div class="b-goods-list__item-pref-data">серебристый</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Размер</div>
+                          <div class="b-goods-list__item-pref-data">1280*1245*90</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Вес</div>
+                          <div class="b-goods-list__item-pref-data">9 кг </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="b-goods-list__item">
+                  <div class="b-goods-list__item-foto"><img src="img/goods/t4.png" title="iPad Air Wi-Fi + Cellular 128 GB - Silver" class="b-goods-list__item-foto-img"></div>
+                  <div class="b-goods-list__item-content">
+                    <div class="b-goods-list__item-content-header"><a href="#" title="iPad Air Wi-Fi + Cellular 128 GB - Silver" class="b-goods-list__item-content-header-link">iPad Air Wi-Fi + Cellular 128 GB - Silver</a></div>
+                    <div class="b-goods-list__item-content-text">
+                      <div class="b-goods-list__item-pref">
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Артикул</div>
+                          <div class="b-goods-list__item-pref-data">42787825</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Опция</div>
+                          <div class="b-goods-list__item-pref-data">включена</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Цвет</div>
+                          <div class="b-goods-list__item-pref-data">серебристый</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Размер</div>
+                          <div class="b-goods-list__item-pref-data">1280*1245*90</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Вес</div>
+                          <div class="b-goods-list__item-pref-data">9 кг </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="b-goods-list__item">
+                  <div class="b-goods-list__item-foto"><img src="img/goods/t5.png" title="Apple iPod nano 7G 16 ГБ Blue" class="b-goods-list__item-foto-img"></div>
+                  <div class="b-goods-list__item-content">
+                    <div class="b-goods-list__item-content-header"><a href="#" title="Apple iPod nano 7G 16 ГБ Blue" class="b-goods-list__item-content-header-link">Apple iPod nano 7G 16 ГБ Blue</a></div>
+                    <div class="b-goods-list__item-content-text">
+                      <div class="b-goods-list__item-pref">
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Артикул</div>
+                          <div class="b-goods-list__item-pref-data">42787825</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Опция</div>
+                          <div class="b-goods-list__item-pref-data">включена</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Цвет</div>
+                          <div class="b-goods-list__item-pref-data">серебристый</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Размер</div>
+                          <div class="b-goods-list__item-pref-data">1280*1245*90</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Вес</div>
+                          <div class="b-goods-list__item-pref-data">9 кг </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="b-goods-list__item">
+                  <div class="b-goods-list__item-foto"><img src="img/goods/t6.png" title="Роутер Wi-Fi Apple AirPort Extreme Base Station" class="b-goods-list__item-foto-img"></div>
+                  <div class="b-goods-list__item-content">
+                    <div class="b-goods-list__item-content-header"><a href="#" title="Роутер Wi-Fi Apple AirPort Extreme Base Station" class="b-goods-list__item-content-header-link">Роутер Wi-Fi Apple AirPort Extreme Base Station</a></div>
+                    <div class="b-goods-list__item-content-text">
+                      <div class="b-goods-list__item-pref">
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Артикул</div>
+                          <div class="b-goods-list__item-pref-data">42787825</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Опция</div>
+                          <div class="b-goods-list__item-pref-data">включена</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Цвет</div>
+                          <div class="b-goods-list__item-pref-data">серебристый</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Размер</div>
+                          <div class="b-goods-list__item-pref-data">1280*1245*90</div>
+                        </div>
+                        <div class="b-goods-list__item-pref__line">
+                          <div class="b-goods-list__item-pref-label">Вес</div>
+                          <div class="b-goods-list__item-pref-data">9 кг </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="b-shop-info">
+                <div class="b-shop-info__header">Пара слов о магазине</div>
+                <div class="b-shop-info__content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                    parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                    laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. </p>
+                  <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="push"></div>
     </div>
-	<div class="b-footer-container">
-			<div class="b-footer">
-				<div class="b-footer__logo">
-						<a href="index.html" class="b-footer__logo-link"> 
-							<img title="Эпплшоп" src="img/logo-footer.png" alt="Эпплшоп">
-							<span class="logo-hide">Эпплшоп</span>
-						</a>
-				</div>
-				<div class="b-footer__links-list">
-					<ul class="b-footer__links-items">
-						<li class="b-footer__links-item header">
-							О магазине
-						</li>
-						<li class="b-footer__links-item">
-							<a href="" class="b-footer__links-item-href">О нас</a>
-						</li>
-						<li class="b-footer__links-item">
-							<a href="" class="b-footer__links-item-href">Наши цены</a>
-						</li>
-						<li class="b-footer__links-item">
-							<a href="" class="b-footer__links-item-href">Наши скидки</a>
-						</li>
-						<li class="b-footer__links-item">
-							<a href="" class="b-footer__links-item-href">Акции</a>
-						</li>
-					</ul>
-					<ul class="b-footer__links-items">
-						<li class="b-footer__links-item header">
-							Каталог
-						</li>
-						<li class="b-footer__links-item">
-							<a href="" class="b-footer__links-item-href">Смартфоны</a>
-						</li>
-						<li class="b-footer__links-item">
-							<a href="" class="b-footer__links-item-href">Планшеты</a>
-						</li>
-						<li class="b-footer__links-item">
-							<a href="" class="b-footer__links-item-href">Компьютеры</a>
-						</li>
-						<li class="b-footer__links-item">
-							<a href="" class="b-footer__links-item-href">Аксессуары</a>
-						</li>
-					</ul>
-					<ul class="b-footer__links-items">
-						<li class="b-footer__links-item header">
-							Контакты
-						</li>
-						<li class="b-footer__links-item">
-							<a href="" class="b-footer__links-item-href">Телефоны</a>
-						</li>
-						<li class="b-footer__links-item">
-							<a href="" class="b-footer__links-item-href">Адреса</a>
-						</li>
-						<li class="b-footer__links-item">
-							<a href="" class="b-footer__links-item-href">Карта проезда</a>
-						</li>
-						<li class="b-footer__links-item">
-							<a href="" class="b-footer__links-item-href">Обратная связь</a>
-						</li>
-					</ul>
-				</div>
-				<div class="b-footer-socials">
-					<a href="index.html" class="b-footer-socials__link app"> 
-							<img title="appstore" src="img/app.png" alt="appstore">
-							<span class="logo-hide">AppStore</span>
-					</a>
-					<a href="index.html" class="b-footer-socials__link google"> 
-							<img title="google" src="img/google.png" alt="google">
-							<span class="logo-hide">Google</span>
-					</a>
-					<a href="index.html" class="b-footer-socials__link vk"> 
-							<img title="Vk" src="img/vk.png" alt="Vk">
-							<span class="logo-hide">Vk</span>
-					</a>
-					<a href="index.html" class="b-footer-socials__link fb"> 
-							<img title="facebook" src="img/fb.png" alt="facebook">
-							<span class="logo-hide">Facebook</span>
-					</a>
-					<a href="index.html" class="b-footer-socials__link tw"> 
-							<img title="tweeter" src="img/tw.png" alt="tweeter">
-							<span class="logo-hide">Tweeter</span>
-					</a>
-				</div>			
-
-			</div>
-	</div>
-	
-	
-
-
-
-
-	<!-- build:js js/common.js -->
-		<script src="js/main.js"></script>
-		<script src="js/plugins.js"></script>
-	<!-- endbuild -->
-</body>
-</html>
+    <!-- Content: end-->
+    <div id="back-top" class="b-arrow-up"><a href="#top" class="b-arrow-up__link">Наверх</a></div>
+    <!-- Footer: start-->
+    <div class="b-footer-container">
+      <div class="b-footer">
+        <div class="b-footer__logo">
+          <a href="index.html" class="b-footer__logo-link"><img title="Эпплшоп" src="img/logo-footer.png" alt="Эпплшоп"><span class="logo-hide">Эпплшоп</span></a>
+        </div>
+        <div class="b-footer__links-list">
+          <ul class="b-footer__links-items">
+            <li class="b-footer__links-item header">О магазине </li>
+            <li class="b-footer__links-item "><a href="#" class="b-footer__links-item-href">О нас</a> </li>
+            <li class="b-footer__links-item "><a href="#" class="b-footer__links-item-href">Наши цены</a> </li>
+            <li class="b-footer__links-item "><a href="#" class="b-footer__links-item-href">Наши скидки</a> </li>
+            <li class="b-footer__links-item "><a href="#" class="b-footer__links-item-href">Акции</a> </li>
+          </ul>
+          <ul class="b-footer__links-items">
+            <li class="b-footer__links-item header">Каталог </li>
+            <li class="b-footer__links-item "><a href="#" class="b-footer__links-item-href">Смартфоны</a> </li>
+            <li class="b-footer__links-item "><a href="#" class="b-footer__links-item-href">Планшеты</a> </li>
+            <li class="b-footer__links-item "><a href="#" class="b-footer__links-item-href">Компьютеры</a> </li>
+            <li class="b-footer__links-item "><a href="#" class="b-footer__links-item-href">Аксессуары</a> </li>
+          </ul>
+          <ul class="b-footer__links-items">
+            <li class="b-footer__links-item header">Контакты </li>
+            <li class="b-footer__links-item "><a href="#" class="b-footer__links-item-href">Телефоны</a> </li>
+            <li class="b-footer__links-item "><a href="#" class="b-footer__links-item-href">Адреса</a> </li>
+            <li class="b-footer__links-item "><a href="#" class="b-footer__links-item-href">Карта проезда</a> </li>
+            <li class="b-footer__links-item "><a href="#" class="b-footer__links-item-href">Обратная связь</a> </li>
+          </ul>
+        </div>
+        <div class="b-footer-socials">
+          <a href="index.html" class="b-footer-socials__link app"><img title="appstore" src="img/app.png" alt="appstore"><span class="logo-hide">AppStore</span></a>
+          <a href="index.html" class="b-footer-socials__link google"><img title="google" src="img/google.png" alt="google"><span class="logo-hide">Google</span></a>
+          <a href="index.html" class="b-footer-socials__link vk"><img title="Vk" src="img/vk.png" alt="Vk"><span class="logo-hide">Vk</span></a>
+          <a href="index.html" class="b-footer-socials__link fb"><img title="facebook" src="img/fb.png" alt="facebook"><span class="logo-hide">Facebook</span></a>
+          <a href="index.html" class="b-footer-socials__link tw"><img title="tweeter" src="img/tw.png" alt="tweeter"><span class="logo-hide">Tweeter</span></a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer: end-->
+    <!-- JS: start-->
+    <!-- build:js js/common.min.js-->
+    <script src="js/main.js"></script>
+    <script src="js/plugins.js"></script>
+    <!-- endbuild-->
+  </body>

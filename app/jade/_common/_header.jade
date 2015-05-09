@@ -1,0 +1,26 @@
+.b-header-container
+	.b-header
+		.b-header-content
+			.b-logo
+				a.b-logo-image.logo-hide(href="/")
+					img(src='img/logo.png', alt='Эпплшоп')
+					span.logo-hide Эпплшоп
+
+			address.b-contacts
+				ul.b-contacts__list
+					li.b-contacts__list-item.phone-link
+						a.b-contacts__item-link(href="tel:+380115554433")
+							span.phone-code +7(921)
+							|322 12 32
+					li.b-contacts__list-item
+						a.b-contacts__item-link.mail-link(href="mailto:andr.ivas12@gmail.com") manager@company.com
+			
+			nav.b-header-menu
+				ul.b-header-menu__items
+					each item, index in ['Мобильные телефоны', 'Планшеты', 'Мр3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Apple TV', 'Аксессуары']
+						li.b-header-menu__item
+							a(href="#" class='b-header-menu__link ' + ((index == 1) ? 'active' : '' ))= item
+			
+
+
+

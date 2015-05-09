@@ -542,7 +542,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e4f0', end
 /*footer______________________________________________________________________*/
 
 .b-footer-container {
-   background: url('../img/f-bg.png') #714d9e ;
+   background: #714d9e url('../img/f-bg.png')  ;
 }
 
 .b-footer {

@@ -1,0 +1,53 @@
+.b-footer
+
+	.b-footer__logo
+		a.b-footer__logo-link(href='index.html')
+			img(title='Эпплшоп', src='img/logo-footer.png', alt='Эпплшоп')
+			span.logo-hide Эпплшоп
+
+	.b-footer__links-list
+		ul.b-footer__links-items
+
+			each item, index in ['О магазине', 'О нас', 'Наши цены', 'Наши скидки', 'Акции']
+				li(class='b-footer__links-item ' + ((index == 0) ? 'header' : '' ))
+					if index == 0
+						=item
+					else
+						a.b-footer__links-item-href(href="#")=item
+		
+		ul.b-footer__links-items
+			each item, index in ['Каталог', 'Смартфоны', 'Планшеты', 'Компьютеры', 'Аксессуары']
+				li(class='b-footer__links-item ' + ((index == 0) ? 'header' : '' ))
+					if index == 0
+						=item
+					else
+						a.b-footer__links-item-href(href="#")=item
+		
+		ul.b-footer__links-items
+			each item, index in ['Контакты', 'Телефоны', 'Адреса', 'Карта проезда', 'Обратная связь']
+				li(class='b-footer__links-item ' + ((index == 0) ? 'header' : '' ))
+					if index == 0
+						=item
+					else
+						a.b-footer__links-item-href(href="#")=item
+
+	.b-footer-socials
+		a.b-footer-socials__link.app(href="index.html")
+			img(title="appstore", src="img/app.png", alt="appstore")
+			span.logo-hide AppStore
+
+		a.b-footer-socials__link.google(href="index.html")
+			img(title="google", src="img/google.png", alt="google")
+			span.logo-hide Google
+
+		a.b-footer-socials__link.vk(href="index.html")
+			img(title="Vk", src="img/vk.png", alt="Vk")
+			span.logo-hide Vk
+
+		a.b-footer-socials__link.fb(href="index.html")
+			img(title="facebook", src="img/fb.png", alt="facebook")
+			span.logo-hide Facebook
+
+		a.b-footer-socials__link.tw(href="index.html")
+			img(title="tweeter", src="img/tw.png", alt="tweeter")
+			span.logo-hide Tweeter
