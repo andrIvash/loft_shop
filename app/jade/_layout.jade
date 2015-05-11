@@ -25,24 +25,27 @@ head
 
 	// Styles
 
-	// build:css css/vendor.min.css
+	<!-- build:css css/vendor.min.css -->
+	// bower:css
 	link(rel='stylesheet', href='bower/normalize.css/normalize.css')
-	// endbuild
-
-	// build:css css/common.min.css
+	// endbower
+	<!-- endbuild -->
+	
+	<!-- build:css css/common.min.css -->
 	link(rel='stylesheet', href='css/main.css')
-	link(rel='stylesheet', href='css/font.css')
-	// endbuild
+	<!-- endbuild -->
 
 	// JS
-
-	// build:js js/vendor.min.js
+	
+	<!-- build:js js/vendor.min.js -->
+	// bower:js
 	
 	script(src='bower/jquery/dist/jquery.min.js')
 	script(src='bower/html5shiv/dist/html5shiv.min.js')
 	script(src='bower/respond/src/respond.js')
 	
-	// endbuild
+	// endbower
+	<!-- endbuild -->
 
 body
 	<!--[if lt IE 8]>

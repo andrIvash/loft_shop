@@ -1,0 +1,123 @@
+/*breadcrumbs list_________________________________________________________________*/
+.b-breadcrumbs {
+  margin-bottom: 21px;
+  position: relative;
+}
+.b-breadcrumbs__list {      
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      float:left;
+
+}
+.b-breadcrumbs__list-item {
+  display: inline-block;
+  
+}
+.b-breadcrumbs__list-item:before {
+  content: ">";
+  font-family:"elektra_light_proregular";
+  font-size: 14px;
+  color:  #5c7b98;
+}
+.b-breadcrumbs__list-item:first-child:before {
+  display: none;
+}
+.b-breadcrumbs__list-item-link {
+  font-family:"elektra_light_proregular";
+  font-size: 14px;
+  color: #00b9fe;
+}
+.b-breadcrumbs__list-item-link:hover {
+   text-decoration: none;
+}
+.b-breadcrumbs__list-item-link.active {
+  font-family:"elektra_light_proregular";
+  font-size: 14px;
+  color: #5c7b98;
+  text-decoration: none;
+}
+/* pager _____________________________________________________________*/
+
+.b-pager {
+  float: right
+}
+
+
+.b-pager__list {
+  float:right;
+  margin: 0;
+  margin-left: 22px;
+  padding: 0;
+  list-style: none;
+}
+.b-pager__list-item {
+  display: inline-block;
+  margin-left: 5px;
+}
+.b-pager__list-item-link {
+  font-family:"elektra_light_proregular";
+  font-size: 15px;
+  color: #00b9fe;
+}
+.b-pager__list-item-link.active {
+  text-decoration: none;
+  color:#5c7b98; 
+}
+.b-pager__list-item-link:hover {
+  text-decoration: none;
+} 
+
+.b-pager__form {
+    position: absolute;
+    left:720px;
+    top:0;
+
+  
+}
+
+.b-page__form-select-wrapper {
+  display: inline-block;
+  width: 132px;
+
+  
+}
+.b-page__form-select-data {
+  width: 125px;
+  background-image: url('../img/b-down.png');
+  background-repeat: no-repeat;
+  background-position: 105px 0px;
+  border: 1px solid #dae1eb;
+  font-family:"elektra_light_proregular";
+  font-size: 15px;
+  color: #5c7b98;
+  padding-left: 5px;
+  padding-top: 6px;
+  cursor: pointer;
+ 
+
+}
+.b-pager__form-select{ 
+  font-family:"elektra_light_proregular";
+  background: #fff;
+  font-size: 15px;
+  color: #5c7b98;
+  margin:0; 
+  padding: 0;
+  list-style: none;
+  border: 1px solid #dae1eb;
+  display: none;
+
+}
+.b-pager__form-select-item {
+  display: block;
+  height: 24px;
+  cursor: pointer;
+  padding-left:5px;
+  padding-top: 4px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+.b-pager__form-select-item:hover {
+  color:#dae1eb;
+}

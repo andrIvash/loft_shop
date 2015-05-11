@@ -1,0 +1,38 @@
+/* arrow up_____________________________________________________________________*/
+ .b-arrow-up {
+    position: fixed;
+    margin-left: 1230px;
+    bottom: 290px;
+    
+    
+
+ }
+ .b-arrow-up__link {
+  position:relative;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family:"elektra_light_probold";
+    font-size: 18px;
+    color:#fff;
+    background-color: #00b9fe;
+    padding: 8px;
+    width: 63px;
+ }
+ .b-arrow-up__link:before {
+ content:"";  
+ position: absolute;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #00b9fe;
+    top: -9px;
+    left: 34px;
+}
+.b-arrow-up__link:after {
+ content:"";
+    position: absolute;
+    left: 35px; 
+    top: 0px; 
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+}

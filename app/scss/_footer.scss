@@ -1,0 +1,69 @@
+/*footer______________________________________________________________________*/
+
+.b-footer-container {
+   background: #714d9e url('../img/f-bg.png')  ;
+}
+
+.b-footer {
+   position:relative;
+}
+.b-footer__logo {
+   position: absolute;
+   top: 100px;
+   left: 0px;
+}
+.b-footer__logo-link {
+   text-decoration: none;
+}
+
+.b-footer__links-list {
+  position: absolute;
+  top: 62px;
+  left:259px;
+  font-family: "elektra_light_probold";
+  font-size: 15px;
+  color: #fff;
+  
+}
+
+.b-footer__links-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  margin-right: 65px;
+
+}
+
+.b-footer__links-item.header {
+  margin-bottom: 8px;
+}
+
+.b-footer__links-item {
+  margin-bottom: 7px;
+}
+
+.b-footer__links-item-href {
+  color: #fff;
+  font-family:"elektra_light_proregular";
+}
+.b-footer__links-item-href:hover {
+  text-decoration: none;
+}
+.b-footer-socials {
+  position: absolute;
+  top: 75px;
+  left: 813px;
+  width: 200px;
+}
+
+.b-footer-socials__link {
+  display: inline-block;
+  margin-bottom: 22px;
+  text-decoration: none;
+
+}
+
+.vk , .fb, .tw {
+  margin-right: 5px;
+}

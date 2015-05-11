@@ -1,0 +1,150 @@
+@import 'set';
+@import 'bread';
+@import 'font';
+@import 'head';
+@import 'sidebar';
+@import 'footer';
+@import 'arrow-up'; 
+
+/* page content _____________________________________________________________________________*/
+.b-page-content-container {
+  
+  min-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.b-page-content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* goods-list __________________________________________________________________*/
+
+.b-goods-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+
+.b-goods-list__item {
+  
+  margin-bottom: 20px;
+  width: 740px;
+  min-height: 158px;
+  margin-right: 21px;
+  display: inline-block;
+  border: 1px solid #dbe1eb;
+  vertical-align: top;
+}
+
+.b-goods-list__item:last-child {
+  margin-bottom: 35px;
+}
+
+.b-goods-list__item.grid {
+    width: 220px;   
+
+}
+
+.b-goods-list__item-pref {
+  margin-left: 15px;
+}
+.b-goods-list__item-pref.grid {
+  display: table;
+}
+
+
+.b-goods-list__item-pref__line {
+  display: inline-block;
+  margin-right: 2px;
+}
+.b-goods-list__item-pref__line.grid {
+  display: table-row;
+}
+
+
+.b-goods-list__item-pref-label, .b-goods-list__item-pref-data {
+    display: inline-block;
+}
+.b-goods-list__item-pref-label.grid, .b-goods-list__item-pref-data.grid {
+    display: table-cell;
+    padding-right: 30px;
+}
+
+
+.b-goods-list__item:hover {
+  -moz-box-shadow: 0px 0px 10px #dbe1eb;
+  -webkit-box-shadow: 0px 0px 10px #dbe1eb;
+  box-shadow: 0px 0px 10px #dbe1eb;
+  cursor: pointer;
+}
+
+.b-goods-list__item-foto {
+    text-align: center;
+    overflow: hidden;
+    height: 140px;
+    width: 160px;
+    display: inline-block;
+    margin-left: 30px;
+    
+    
+
+}
+
+.b-goods-list__item-foto-img {
+    margin-top: 30px;
+   
+  
+}
+
+.b-goods-list__item-content {
+  display: inline-block;
+  font-family:"elektra_light_proregular";
+  vertical-align: top;
+  padding-top: 30px;
+  width: 530px;
+  
+}
+
+.b-goods-list__item-content.grid {
+  width: 215px;
+}
+
+.b-goods-list__item-content-header {
+  font-size: 15px;
+
+  margin-bottom: 16px;
+  padding-left: 10px;
+}
+.b-goods-list__item-content-header-link {
+   color: #00b9fe;
+}
+.b-goods-list__item-content-text {
+  font-size: 14px;
+  color: #5c7b98;
+  margin-bottom: 10px;
+  
+}
+
+/* shop-info____________________________________________________________*/
+.b-shop-info {
+  color: #5c7b98;
+  margin-bottom: 89px;
+}
+
+.b-shop-info__header {
+  font-family: "elektra_light_probold";
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.b-shop-info__content {
+ font-family: "elektra_light_proregular";
+ font-size: 15px;
+}
+.b-shop-info__content p {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
