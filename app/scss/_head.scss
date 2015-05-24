@@ -122,6 +122,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9e4f0', end
 /* active ______________________*/
 .b-header-menu__link.active {
     background-color: #00b9fe;
+    color: #fff;
 }
 .b-header-menu__link.active:before {
   background: url('../img/prev-aa.png');

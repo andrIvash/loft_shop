@@ -11,33 +11,35 @@
                     }
 
             
-                    // изменение данных в блоке вывлда в зависимости от выбора элемента списка
+                    // изменение данных в блоке вывода в зависимости от выбора элемента списка
                     function _changeData(e) {
                         
-                        var target = $(this).text(),
+                        var elem = $(this),
+                            target = elem.text(),
                             list = $('.b-pager__form-select'),
-                            viewData = $('.b-page__form-select-data'),
-                            changeElements = $('.b-goods-list__item, .b-goods-list__item-content, .b-goods-list__item-pref, .b-goods-list__item-pref__line, .b-goods-list__item-pref-label, .b-goods-list__item-pref-data');
+                            viewData = $('.b-page__form-select-data');
+                            //changeElements = $('.b-goods-list__item, .b-goods-list__item-content, .goods__item-pref, .goods__item-pref__line, .goods__item-pref-label, .goods__item-pref-data');
 
                         viewData.text(target);
                         list.hide();
                         
                         
 
-                        if($(this).attr('data-value') == 'grid') {
+                        if(elem.attr('data-value') == 'grid') {
                             
-                            $.each( changeElements, function( key, value ) {
-                                $(this).addClass( 'grid' );
-                            });    
+                            $('.b-goods-list').addClass( 'grid' );
+                           // $.each( changeElements, function( key, value ) {
+                           //     $(this).addClass( 'grid' );
+                           // });    
                            
                         }
 
-                        if($(this).attr('data-value') == 'line') {
+                        if(elem.attr('data-value') == 'line') {
                             
-
-                            $.each( changeElements, function( key, value ) {
-                                $(this).removeClass( 'grid' );
-                            });    
+                            $('.b-goods-list').removeClass( 'grid' );
+                           // $.each( changeElements, function( key, value ) {
+                           //     $(this).removeClass( 'grid' );
+                           // });    
                            
                         }
                        
@@ -73,11 +75,11 @@
                         menuItem.children(menuLink).addClass('active');
                                                 
                         if (!menuItem.children('.b-main-nav-dropdown__list').is(':visible')) {
-                            menuItem.children('.b-main-nav-dropdown__list').show();
+                            menuItem.children('.b-main-nav-dropdown__list').show('slow');
 
                         } else {
                             
-                            menuItem.children('.b-main-nav-dropdown__list').hide();
+                            menuItem.children('.b-main-nav-dropdown__list').hide('slow');
                         } 
                     }
 
@@ -91,10 +93,18 @@
 
                         }());
 
+                    
+                    $(document).ready(function(){
 
-                    // инициализация 
-                    viewChanger.init();
+                        if($('.b-content')) {    
+                            viewChanger.init();
+                        }
+
+                    });
+                    
 
 
                 })(jQuery);
-            
+
+
+  

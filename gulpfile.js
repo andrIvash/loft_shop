@@ -27,7 +27,7 @@ gulp.task('jade', function() {
 gulp.task('wiredep', function () {
 	gulp.src('./app/jade/*.jade')
 		.pipe(wiredep({
-			ignorePath: /^(\.\.\/)*\.\./
+			ignorePath: /^(\.\.\/)*\.\.\//
 		}))
 		.pipe(gulp.dest('./app/jade/'))
 });

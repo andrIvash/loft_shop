@@ -291,7 +291,8 @@ html, body {
 
 /* active ______________________*/
 .b-header-menu__link.active {
-  background-color: #00b9fe; }
+  background-color: #00b9fe;
+  color: #fff; }
 
 .b-header-menu__link.active:before {
   background: url("../img/prev-aa.png");
@@ -469,8 +470,8 @@ html, body {
 /* arrow up_____________________________________________________________________*/
 .b-arrow-up {
   position: fixed;
-  margin-left: 1230px;
-  bottom: 290px; }
+  right: 3%;
+  bottom: 45%; }
 
 .b-arrow-up__link {
   position: relative;
@@ -528,28 +529,15 @@ html, body {
 .b-goods-list__item:last-child {
   margin-bottom: 35px; }
 
-.b-goods-list__item.grid {
-  width: 220px; }
-
-.b-goods-list__item-pref {
+.goods__item-pref {
   margin-left: 15px; }
 
-.b-goods-list__item-pref.grid {
-  display: table; }
-
-.b-goods-list__item-pref__line {
+.goods__item-pref__line {
   display: inline-block;
   margin-right: 2px; }
 
-.b-goods-list__item-pref__line.grid {
-  display: table-row; }
-
-.b-goods-list__item-pref-label, .b-goods-list__item-pref-data {
+.goods__item-pref-label, .goods__item-pref-data {
   display: inline-block; }
-
-.b-goods-list__item-pref-label.grid, .b-goods-list__item-pref-data.grid {
-  display: table-cell;
-  padding-right: 30px; }
 
 .b-goods-list__item:hover {
   box-shadow: 0px 0px 10px #dbe1eb;
@@ -557,14 +545,19 @@ html, body {
 
 .b-goods-list__item-foto {
   text-align: center;
-  overflow: hidden;
   height: 140px;
   width: 160px;
   display: inline-block;
-  margin-left: 30px; }
+  margin-left: 30px;
+  position: relative; }
 
 .b-goods-list__item-foto-img {
-  margin-top: 30px; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
 
 .b-goods-list__item-content {
   display: inline-block;
@@ -572,9 +565,6 @@ html, body {
   vertical-align: top;
   padding-top: 30px;
   width: 530px; }
-
-.b-goods-list__item-content.grid {
-  width: 215px; }
 
 .b-goods-list__item-content-header {
   font-size: 15px;
@@ -588,6 +578,22 @@ html, body {
   font-size: 14px;
   color: #5c7b98;
   margin-bottom: 10px; }
+
+.b-goods-list.grid .b-goods-list__item-content {
+  width: 215px; }
+
+.b-goods-list.grid .goods__item-pref-label, .b-goods-list.grid .goods__item-pref-data {
+  display: table-cell;
+  padding-right: 30px; }
+
+.b-goods-list.grid .goods__item-pref__line {
+  display: table-row; }
+
+.b-goods-list.grid .goods__item-pref {
+  display: table; }
+
+.b-goods-list.grid .b-goods-list__item {
+  width: 220px; }
 
 /* shop-info____________________________________________________________*/
 .b-shop-info {
